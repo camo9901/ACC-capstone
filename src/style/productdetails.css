@@ -1,0 +1,86 @@
+.details_container {
+  display: flex;
+  margin-top: 10rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  margin-bottom: 10rem;
+}
+
+.details_img img {
+  width: 800px;
+  height: 800px;
+  object-fit: contain;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.details_img img :hover {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.details_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.details_tittle {
+  font-size: 45px;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.details_description {
+  margin-bottom: 1rem;
+  font-size: 24px;
+  padding: 2rem;
+  /* font-style: oblique; */
+  text-align: justify;
+}
+
+.details_price {
+  font-size: 20px;
+}
+
+.results {
+  position: relative;
+  left: 160px;
+  top: 150px;
+}
+
+.results button {
+  background-color: white;
+  font-size: 25px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.results button::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: inset 0px 0px 0px #6098ff;
+  display: block;
+  -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+}
+/* if you want it to show from the right use -300px instead */
+.results button:hover::before {
+  box-shadow: inset 300px 0px 0px #6098ff;
+}

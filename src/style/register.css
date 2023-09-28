@@ -1,0 +1,208 @@
+.register_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.register_form {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  height: 700px;
+  width: 700px;
+  max-width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.register_title {
+  font-size: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 40px);
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Media queries to handle responsiveness */
+@media (max-width: 800px) {
+  .register_container {
+    width: 100%;
+    height: auto;
+  }
+
+  .register_form {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.personal_title {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  color: rgba(83, 83, 83, 0.705);
+  font-style: italic;
+
+  letter-spacing: 1px;
+}
+
+input[type="email"] {
+  width: calc(100% - 40px);
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.personal_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register_name {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.register_lastname {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.register_contact {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  color: rgba(83, 83, 83, 0.705);
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.contact_info {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
+.contact_info label {
+  display: flex;
+}
+
+.register_email,
+.register_phone {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 74%;
+}
+
+.login_info {
+  display: flex;
+  justify-content: center;
+}
+
+.register_username {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  justify-content: end;
+}
+
+.register_password {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.register_pass {
+  font-size: 15px;
+  position: absolute;
+  background-color: white;
+  border: none;
+  /*move using left and bottom properties */
+  left: 530px;
+  top: 267px;
+}
+
+.register_terms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px;
+}
+
+.register_submit {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.register_submit button {
+  background-color: #6877ad;
+  color: white;
+  white-space: nowrap;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 50px;
+  outline: none;
+  font-size: 14px;
+  letter-spacing: 0.025rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 800;
+  min-height: 50px;
+  width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.register_login {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-top: 45px;
+}
+
+.register_login button {
+  background-color: #6877ad;
+  color: white;
+  white-space: nowrap;
+  border: none;
+  line-height: 30px;
+  outline: none;
+  font-size: 10px;
+  letter-spacing: 0.025rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 800;
+  min-height: 20px;
+  width: 60px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  left: 10px;
+  bottom: 5px;
+}

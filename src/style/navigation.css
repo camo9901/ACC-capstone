@@ -1,0 +1,58 @@
+.navbar {
+  background-color: #5f72a6; /*#83635f*/
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.toolbar {
+  display: flex;
+}
+
+.logo-container .store-icon {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.tittle_div {
+  display: flex;
+}
+
+.navbar-title {
+  color: white;
+  margin: 0;
+  font-size: 24px;
+  display: flex;
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.cart-button,
+.login-button,
+.logout-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cart-button:hover,
+.login-button:hover,
+.logout-button:hover {
+  opacity: 0.4;
+}
+
+.search-container {
+  position: relative;
+}
+
+.login-button a,
+.logout-button a {
+  text-decoration: none;
+  color: inherit;
+}

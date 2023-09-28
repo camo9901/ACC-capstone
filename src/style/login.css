@@ -1,0 +1,151 @@
+.login_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 500px;
+}
+
+.form_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.login_title {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.login_user {
+  padding-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  margin: 8px 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.password_user {
+  padding-top: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.login_submit {
+  display: flex;
+  justify-content: center;
+}
+
+.login_submit button {
+  background-color: #6877ad;
+  color: white;
+  white-space: nowrap;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 50px;
+  outline: none;
+  font-size: 18px;
+  letter-spacing: 0.025rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 800;
+  min-height: 50px;
+  width: 120px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.show_passwrod {
+  font-size: 15px;
+  position: absolute;
+  right: 50px;
+  top: 201px;
+  background-color: white;
+  border: none;
+}
+
+.password_reset {
+  display: flex;
+  position: relative;
+  left: 315px;
+  padding-bottom: 2rem;
+}
+.password_reset a {
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+}
+
+.password_reset a:hover {
+  color: #6877ad;
+  display: inline-block;
+  position: relative;
+}
+
+.password_reset a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #6877ad;
+  transform-origin: bottom right;
+}
+
+.password_reset a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.sign_up {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 120px;
+}
+
+.sign_up button {
+  background-color: #6877ad;
+  color: white;
+  white-space: nowrap;
+  border: none;
+  line-height: 30px;
+  outline: none;
+  font-size: 10px;
+  letter-spacing: 0.025rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 800;
+  min-height: 20px;
+  width: 60px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  left: 10px;
+  bottom: 5px;
+}
