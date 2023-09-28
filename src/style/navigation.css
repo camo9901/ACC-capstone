@@ -1,17 +1,21 @@
 .navbar {
-  background-color: #5f72a6; /*#83635f*/
+  background-color: #5f72a6;
   padding: 10px 20px;
   font-family: Arial, sans-serif;
 }
 
 .toolbar {
   display: flex;
+  justify-content: space-between; /* Adjusted this */
 }
 
-.logo-container .store-icon {
-  font-size: 24px;
-  color: white;
-  text-decoration: none;
+.logo-container {
+  background-color: #5f72a6;
+  padding: 30px;
+}
+
+.store-icon {
+  background-color: #5f72a6;
 }
 
 .tittle_div {
@@ -28,9 +32,10 @@
 .navbar-actions {
   display: flex;
   gap: 10px;
+  margin-left: auto;
+  padding-right: 10px;
 }
 
-.cart-button,
 .login-button,
 .logout-button {
   background-color: transparent;
@@ -38,10 +43,8 @@
   color: white;
   padding: 5px 15px;
   cursor: pointer;
-  transition: background-color 0.2s;
 }
 
-.cart-button:hover,
 .login-button:hover,
 .logout-button:hover {
   opacity: 0.4;
@@ -55,4 +58,12 @@
 .logout-button a {
   text-decoration: none;
   color: inherit;
+}
+
+.cart-store {
+  background-color: #5f72a6;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 15px;
+  cursor: pointer;
 }

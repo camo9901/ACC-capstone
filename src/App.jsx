@@ -1,13 +1,12 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./componets/navbar";
+import Navbar from "./componets/Navbar";
 import MainPage from "./componets/mainpage";
 import Cart from "./componets/cart";
 import Login from "./componets/login";
 import ProductDetails from "./componets/productdetails";
 import RegisterPage from "./componets/register";
-import Footer from "./componets/footer";
 
 function App() {
   return (

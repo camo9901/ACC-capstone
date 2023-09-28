@@ -83,9 +83,7 @@ function ProductDetails() {
             <p>{product.description}</p>
           </div>
           <div className="details_cart">
-            <Button variant="contained" endIcon={<AddShoppingCartIcon />}>
-              Add to Cart
-            </Button>
+            <button className="add_cart_details">Add to cart</button>
           </div>
         </div>
       </div>
